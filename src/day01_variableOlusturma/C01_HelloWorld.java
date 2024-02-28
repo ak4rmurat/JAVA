@@ -21,6 +21,7 @@ public class C01_HelloWorld {
         System.out.println("Ahmet");
 
         System.out.print("baba....");
+        System.out.println("yeni bilgi");
 
     }
 
