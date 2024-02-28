@@ -23,6 +23,7 @@ public class C01_HelloWorld {
         System.out.print("baba....");
         System.out.println("yeni bilgi");
 
+        System.out.println("son girilen v3");
     }
 
 
