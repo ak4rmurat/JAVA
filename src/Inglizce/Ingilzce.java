@@ -16,6 +16,7 @@ public class Ingilzce {
         words.put("Cry", "Ağlamak");
         words.put("Offer", "Talep");
         words.put("See", "Görmek");
+        System.out.println("hello");
 
 
         // Diğer kelimeleri ekle
