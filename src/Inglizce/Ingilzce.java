@@ -14,6 +14,7 @@ public class Ingilzce {
         words.put("Fire", "Ateş");
         words.put("Next", "İleri");
         words.put("Cry", "Ağlamak");
+        words.put("Offer", "Talep");
 
         // Diğer kelimeleri ekle
         Random random = new Random();
