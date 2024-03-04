@@ -1,9 +1,6 @@
 package day31_maps;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class MapDepo {
 
@@ -73,9 +70,114 @@ public class MapDepo {
             default:
                 return "Yanlis bilgi istegi";
         }
+    }
+
+    public static void sinifSubeListesiYazdir(Map<Integer, String> ogrenciMap, Integer  sinif, String sube){
+
+        // 1 - Tüm öğrencileri gözden geçirebilmek için önce tüm öğrencileri numaraları elde edelim
+
+        Set<Integer> ogrenciNoSeti = ogrenciMap.keySet();
+
+        // 2 - Bu keyleri kullanarak her bir key için value'leri bize getirecek bir for-each loop oluşturalım
+
+        System.out.println("No Isim   Soyisim");
+        System.out.println("=============================");
+        for ( Integer eachKey : ogrenciNoSeti) {
+            String eachValue = ogrenciMap.get(eachKey); // Ali-Can-11-H-Mf
+
+
+            String[] valueArr = eachValue.split("-");  // [Ali, Can, 11, H, MF]
+
+            if (valueArr[2].equalsIgnoreCase(sinif +"") && valueArr[3].equalsIgnoreCase(sube)){
+                System.out.println(
+                        eachKey + " " +
+                                valueArr[0] + " " +
+                                valueArr[1] );
+
+            }
+        }
+        System.out.println("=============================");
+    }
+
+    public static void isimSoyisimleOgrenciBilgiYazdir(Map<Integer, String> ogrenciMap, String isim, String soyIsim){
+
+        // Tüm keyleri kaydet
+
+        Set<Integer> ogrenciNoSeti = ogrenciMap.keySet();
+
+        System.out.println("No Sinif Sube Bolum");
+        System.out.println("=====================");
+
+        for ( Integer eachKey : ogrenciNoSeti){
+            String eachValue = ogrenciMap.get(eachKey);
+
+            String[] valueArr = eachValue.split("-");
+
+            if (isim.equalsIgnoreCase(valueArr[0]) && soyIsim.equalsIgnoreCase(valueArr[1])){
+
+                System.out.println(
+                                    eachKey + " " +
+                                    valueArr[2] + " " +
+                                    valueArr[3] + " " +
+                                            valueArr[4]
+                );
+            }
+        }
+        System.out.println("=====================");
 
 
 
     }
 
+    public static void sinifIleOgrenciBilgiYazdir(Map<Integer , String> ogrenciMap , String sinif) {
+        Set<Integer> ogrenciNoSeti = ogrenciMap.keySet();
+        System.out.println("No Isim Soyisim Sube");
+        System.out.println("=====================");
+        for (Integer ogrenciNo : ogrenciNoSeti) {
+            String eachValue = ogrenciMap.get(ogrenciNo);
+
+            String[] valueArr = eachValue.split("-");
+            // numara isim, soyisim ve subelerini yazdırın
+            if (sinif.equalsIgnoreCase(valueArr[2])){
+                System.out.println(
+                                    ogrenciNo + " " +
+                                    valueArr[0] + " " +
+                                    valueArr[1] + " " +
+                                    valueArr[3]
+                );
+            }
+        }
+        System.out.println("=====================");
+    }
+
+    public static void soyIsimIleOgrenciListele(Map<Integer , String> ogrenciMap, String soyIsim){
+
+        Set<Integer> ogrenciNoSeti = ogrenciMap.keySet();
+
+        System.out.println("No Isim Sinif Sube Bolum");
+        System.out.println("=========================");
+
+        for (Integer ogrenciNo : ogrenciNoSeti){
+
+            String ogrenciValue = ogrenciMap.get(ogrenciNo);
+
+            String[] valueArr = ogrenciValue.split("-");
+
+            if (soyIsim.equalsIgnoreCase(valueArr[1])){
+
+                System.out.println(
+                                    ogrenciNo + " " +
+                                    valueArr[0] + " " +
+                                    valueArr[2] + " " +
+                                    valueArr[3] + " " +
+                                    valueArr[4]
+                );
+            }
+        }
+        System.out.println("=========================");
+    }
+
 }
+
+
+
