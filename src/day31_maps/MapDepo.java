@@ -307,6 +307,65 @@ public class MapDepo {
 
         return ogrenciMap;
     }
+
+    public static Map<Integer, String> topluBolumDegistir(Map<Integer, String> ogrenciMap, String eskiBolum, String yeniBolum) {
+        // 1 - Tum entry'lere ulaşmak için entrySet oluşturalım.
+
+        Set<Map.Entry<Integer,String>> ogrenciEntrySeti = ogrenciMap.entrySet();
+
+        // 2 - Tüm entry'leri elden geçirmek için for-each Loop oluşturalım
+
+        for (Map.Entry<Integer,String> eachEntry : ogrenciEntrySeti
+            ){
+        // 3 - Value'deki bilgilere ulaşabilmek için Array oluşturalım
+        String[] valueArr = eachEntry.getValue().split("-");
+
+        // 4 -Array'de istenen update'i yapalım
+        if (valueArr[4].equalsIgnoreCase(eskiBolum)){
+            valueArr[4] = yeniBolum;
+        }
+        // 5 - Update edilen array'i entry'nin value'su olarak set edelim.
+            eachEntry.setValue(String.join("-", valueArr));
+
+        }
+
+    return ogrenciMap;
+    }
+
+    public static Map<Integer, String> setData(Map<Integer, String> ogrenciMap, int ogrenciNo, String degisecekBilgi, String yeniDeger) {
+
+        // 1- ogrenci numarasi verilen ogrencinin value'sunu String olarak kaydedelim
+        String ogrenciValue = ogrenciMap.get(ogrenciNo);
+        // 2- ogrenci value'sundaki bilgilere ulasabilmek icin array'e split edelim
+        String[] ogrenciValueArr = ogrenciValue.split("-");
+
+        switch (degisecekBilgi.toLowerCase()){
+            case "isim" :
+                ogrenciValueArr[0] = yeniDeger;
+                break;
+            case "soyisim" :
+                ogrenciValueArr[1] = yeniDeger;
+                break;
+            case "sinif" :
+                ogrenciValueArr[2] = yeniDeger;
+                break;
+            case "sube" :
+                ogrenciValueArr[3] = yeniDeger;
+                break;
+            case "bolum" :
+                ogrenciValueArr[4] = yeniDeger;
+                break;
+
+        }
+
+        // 3- array'de degisiklik yaptik, array'in yeni halini yeni value olarak kaydedelim
+        String yeniValue = String.join("-",ogrenciValueArr);
+
+        // 4- Ogrenci no ve yeni value ile map'i update edelim
+        ogrenciMap.put(ogrenciNo,yeniValue);
+
+    return ogrenciMap;
+    }
 }
 
 
