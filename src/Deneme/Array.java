@@ -1,5 +1,6 @@
 package Deneme;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class Array {
@@ -20,6 +21,8 @@ public class Array {
         while (!(sayi == 0));
 
         System.out.println("sayıların toplamı : "+toplam);
+
+
 
     }
 }

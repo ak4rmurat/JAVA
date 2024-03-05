@@ -15,7 +15,7 @@ public class MapDepo {
         ogrenciMap.put(103,"Ali-Cem-11-K-TM");
         ogrenciMap.put(104,"Ayse-Can-10-H-MF");
         ogrenciMap.put(105,"Sevgi-Cem-11-M-TM");
-        ogrenciMap.put(106,"Sevgi-Can-10-K-MF");
+        ogrenciMap.put(106,"Cem-Can-10-K-MF");
         ogrenciMap.put(107,"Esra-Han-11-M-SOZ");
 
         return ogrenciMap;
@@ -365,6 +365,41 @@ public class MapDepo {
         ogrenciMap.put(ogrenciNo,yeniValue);
 
     return ogrenciMap;
+    }
+
+    public static Map<Integer, String> soyAdiDegistir(Map<Integer, String> ogrenciMap,Integer ogrenciNo, String yeniSoyad) {
+
+        String valueOgr = ogrenciMap.get(ogrenciNo);
+        String[] valueArr = valueOgr.split("-");
+        valueArr[1] = yeniSoyad;
+
+        String value = String.join("-",valueArr);
+
+        ogrenciMap.put(ogrenciNo,value);
+
+
+        return ogrenciMap;
+    }
+
+    public static Map<Integer, String> bodySoyadDegistir(Map<Integer, String> ogrenciMap, String eskiSoyad, String yeniSoyad) {
+
+        Set<Integer> ogrenciSetKey = ogrenciMap.keySet();
+
+        for ( Integer eachOgrNo : ogrenciSetKey
+            ){
+            String valueOgr = ogrenciMap.get(eachOgrNo);
+            String[] valurArr = valueOgr.split("-");
+
+            if (valurArr[1].equalsIgnoreCase(eskiSoyad)){
+                valurArr[1] = yeniSoyad;
+            }
+
+            String yeniValue = String.join("-", valurArr);
+
+            ogrenciMap.put(eachOgrNo,yeniValue);
+        }
+
+        return ogrenciMap;
     }
 }
 

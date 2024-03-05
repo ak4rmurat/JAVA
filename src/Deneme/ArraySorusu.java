@@ -1,10 +1,8 @@
 package Deneme;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 import java.util.List;
-import java.util.Scanner;
 
 public class ArraySorusu {
     static Scanner scanner = new Scanner(System.in);
@@ -45,5 +43,6 @@ public class ArraySorusu {
         System.out.println(Arrays.toString(yeniArr));
         arr = yeniArr;
         System.out.println(Arrays.toString(arr));
+
     }
 }

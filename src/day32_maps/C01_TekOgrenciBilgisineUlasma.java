@@ -23,6 +23,7 @@ public class C01_TekOgrenciBilgisineUlasma {
         // manuel olarak 102 nolu öğrencinin soyadını han yapalım
 
         ogrenciMap.put(102, "Veli-Han-10-K-TM");
+        ogrenciMap = MapDepo.soyAdiDegistir(ogrenciMap, 108, "Genc");
 
         System.out.println(ogrenciMap);
 
