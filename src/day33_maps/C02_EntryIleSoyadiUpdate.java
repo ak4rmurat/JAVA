@@ -32,7 +32,5 @@ public class C02_EntryIleSoyadiUpdate {
             eachEntry.setValue(String.join("-",eachValueArr));
         }
         System.out.println(ogrenciMap);
-
-
     }
 }

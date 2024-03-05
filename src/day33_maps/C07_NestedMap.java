@@ -33,7 +33,8 @@ public class C07_NestedMap {
         // 101 numaralı öğrencinin ismini yazdırın
 
         nesOgrMap.get(101); //{sifin=11, sube=H, soyisim=Can, bolum=MF, isim=Ali}
-        System.out.println(nesOgrMap.get(101).get("isim")); // Ali
+
+        // Ali
 
         System.out.println(nesOgrMap.get(101).get("bolum")); // MF
 

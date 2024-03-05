@@ -28,7 +28,7 @@ public class C06_FarkliDataTurleriIleElemanEkleme {
         System.out.println(((int[]) liste.get(4)).length); // 4
 
         // Listedeki Ali'yi büyük harf olarak yazdırın
-        System.out.println(((String) liste.get(0)).toUpperCase()); // ALİ
+        System.out.println(((String)liste.get(0)).toUpperCase()); // ALİ
 
         // Listedeki 24'ün karesini yazdırın
         System.out.println((Integer)liste.get(1)*(Integer)liste.get(1)); // 576
