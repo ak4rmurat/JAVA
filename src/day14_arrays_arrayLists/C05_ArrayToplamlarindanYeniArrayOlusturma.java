@@ -18,18 +18,14 @@ public class C05_ArrayToplamlarindanYeniArrayOlusturma {
         int yeniArrLength = arr.length;
         int[] yeniArr = new int[yeniArrLength]; // [0, 0, 0, 0, 0]
 
-        int toplam = 0;
-
         for (int i = 0; i < arr.length ; i++) {
-
+            int toplam = 0;
             for (int j = 0; j < arr[i].length; j++) {
 
                 toplam += arr[i][j];
             }
             yeniArr[i] = toplam;
-            toplam =0;
         }
-
         System.out.println(Arrays.toString(yeniArr));
     }
 }

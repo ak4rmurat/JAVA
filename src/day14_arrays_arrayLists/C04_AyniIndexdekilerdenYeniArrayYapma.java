@@ -13,15 +13,20 @@ public class C04_AyniIndexdekilerdenYeniArrayYapma {
         //	    output:                       [5, 7, 11]
 
 
-        int[][] arr =  {{3,4,5}, {2,3,6,7}};
+        int[][] arr =  {{4,3,5,5,7}, {2,3,6,7},{1,2},{1,4,5,7},{2,7,8,4}, {1, 1, 1}};
+        int yeniArrLength = arr[0].length;
+        for (int i = 1; i < arr.length; i++) {
+            if (yeniArrLength > arr[i].length){
+                yeniArrLength = arr[i].length;
+            }
+        }
+        int[] yeniArr = new int[yeniArrLength];
 
-        int yeniArrLength = arr[0].length > arr[1].length ? arr[1].length : arr[0].length ;
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = 0; j < yeniArrLength; j++) {
+                yeniArr[j] += arr[i][j];
+            }
 
-        int[] yeniArr = new int[yeniArrLength]; // [0, 0, 0]
-
-        for (int i = 0; i <yeniArrLength ; i++) {
-
-            yeniArr[i] = arr[0][i] + arr[1][i];
         }
 
         System.out.println(Arrays.toString(yeniArr));

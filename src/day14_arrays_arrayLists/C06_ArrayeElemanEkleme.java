@@ -6,7 +6,7 @@ public class C06_ArrayeElemanEkleme {
 
     public static void main(String[] args) {
 
-        // Array'ler ekleme-silme yapamadigimiz icin bizi cok kisitliyor
+        // Array'ler ekleme-silme yapamadigimiz icin bizi cok kisitliyor.
 
         int[] arr = {3,5,8};
 
@@ -27,6 +27,7 @@ public class C06_ArrayeElemanEkleme {
         arr = yeniArr2;
 
         System.out.println(Arrays.toString(arr)); // [3, 8, 20]
+
 
     }
 }
