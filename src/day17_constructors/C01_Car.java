@@ -79,9 +79,9 @@ public class C01_Car {
         fiyat = fyt;
     }
 
-    C01_Car(String marka, String model, String renk, int yil, int fiyat){
+    C01_Car(String mrk, String model, String renk, int yil, int fiyat){
 
-        this.marka = marka;
+        marka = mrk;
         this.model = model;
         this.renk = renk;
         this.yil = yil;

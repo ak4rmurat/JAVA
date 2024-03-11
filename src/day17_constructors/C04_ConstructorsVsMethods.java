@@ -29,9 +29,14 @@ public class C04_ConstructorsVsMethods {
     //}
 
     public static void main(String[] args) {
+        method1();
 
-        C05_ConstructorCall obj = new C05_ConstructorCall();
+        C05_ConstructorCall obj = new C05_ConstructorCall(); // construclar çalıştı.
 
-        obj.method1();
+        obj.method1(); // methodlar çalışıyor.
+    }
+
+    public static void method1(){
+        System.out.println("c04 method1 çalıştı");
     }
 }

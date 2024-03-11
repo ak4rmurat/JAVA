@@ -17,13 +17,13 @@ public class C02_ArrayListmethodlari {
 
         System.out.println(isimler); //  [Damra, Gokcen, Baris, Fuat]
 
-        isimler.add(2,"Bugra"); // gokcen ve baris arasina bugra'yi ekler
+        isimler.add(2, "Bugra"); // gokcen ve baris arasina bugra'yi ekler
 
         System.out.println(isimler); // [Damra, Gokcen, Bugra, Baris, Fuat]
 
         // 2.index'deki ismi Furkan yapin
 
-        isimler.set(2,"Furkan");
+        isimler.set(2, "Furkan");
         // set() verilen index'deki elementi verilen yeni deger olarak update eder
         //       ve silinen eski elementi bize döndürür
 
@@ -49,14 +49,14 @@ public class C02_ArrayListmethodlari {
         System.out.println("Ceren'den sonra : " + isimler); // Ceren'den sonra : [Damra, Gokcen, Furkan, Fuat]
 
 
-       // verilen isim listede varsa silsin
-       // yoksa verilen isim hatali, listede bulunamadi yazdirsin
+        // verilen isim listede varsa silsin
+        // yoksa verilen isim hatali, listede bulunamadi yazdirsin
 
-       String silinecekIsim = "Kemal";
+        String silinecekIsim = "Kemal";
 
-       if ( ! isimler.remove(silinecekIsim) ){
-           System.out.println("verilen "+silinecekIsim+" ismi hatali, listede bulunamadi");
-       } // verilen Kemal ismi hatali, listede bulunamadi
+        if (!isimler.remove(silinecekIsim)) {
+            System.out.println("verilen " + silinecekIsim + " ismi hatali, listede bulunamadi");
+        } // verilen Kemal ismi hatali, listede bulunamadi
 
         System.out.println(isimler); // [Damra, Gokcen, Furkan, Fuat]
 
@@ -71,7 +71,7 @@ public class C02_ArrayListmethodlari {
         // isimler.remove(10); // IndexOutOfBoundsException
 
 
-        List<Integer> sayilar = new ArrayList<>(Arrays.asList(3,4,3,5,6,7,9));
+        List<Integer> sayilar = new ArrayList<>(Arrays.asList(3, 4, 3, 5, 6, 7, 9));
 
         System.out.println(sayilar); // [3, 4, 3, 5, 6, 7, 9]
 
@@ -93,7 +93,13 @@ public class C02_ArrayListmethodlari {
 
         System.out.println(sayilar); // [3, 4, 3, 6, 7]
 
-
-
+        String metin = "asdhjakshfbk bösdngjk sjkgs gm shgkjsndkgöan kljfga";
+        String duzMetin = null;
+        for (int i = 0; i < metin.length(); i++) {
+            if (!(metin.charAt(i) == 'a')) {
+                duzMetin += metin.charAt(i);
+            }
+        }
+        System.out.println(duzMetin);
     }
 }

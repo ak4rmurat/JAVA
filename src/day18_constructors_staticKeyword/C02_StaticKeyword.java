@@ -17,7 +17,7 @@ public class C02_StaticKeyword {
         System.out.println(pers1.persAdres); // Girilmedi
         System.out.println(pers1.perYas); // 0
 
-        System.out.println(pers1.hastaneIsmi); // Yildiz Hastanesi
+        System.out.println(hastaneIsmi); // Yildiz Hastanesi
         // Static member 'hastaneIsmi' accessed via instance reference
         System.out.println(pers1.bashekimIsmi); // Doktor Damra
         // Static member 'bashekimIsmi' accessed via instance reference
@@ -47,6 +47,8 @@ public class C02_StaticKeyword {
         pers2.persIsmi = "Selcuk";
         pers2.persAdres = "Sincan";
         pers2.perYas = 29;
+        System.out.println("000000000");
+        System.out.println(pers2.persIsmi);
 
         pers2.hastaneIsmi = "Sincan Hastanesi";
 

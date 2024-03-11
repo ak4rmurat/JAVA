@@ -36,6 +36,7 @@ public class C05_ConstructorCall {
 
     public static void method1(){
         method2();
+        method3();
         System.out.println("method1 calisti");
 
     }
@@ -43,4 +44,8 @@ public class C05_ConstructorCall {
     public static void method2(){
         System.out.println("method2 calisti");
     }
+    public static void method3(){
+        System.out.println("method3 calıstı");
+    }
 }
+
