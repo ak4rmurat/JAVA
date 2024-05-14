@@ -27,7 +27,7 @@ public class C05_ConstructorCall {
     public static void main(String[] args) {
 
         System.out.println("main method calisti");
-        // method1();
+        method1();
 
         C05_ConstructorCall obj = new C05_ConstructorCall();
 

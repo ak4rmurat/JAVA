@@ -1,9 +1,12 @@
 package p1;
 
-public class C1 {
 
-   protected void method3(){
-       System.out.println("method3 calsti.");
-   }
+
+public class C1  {
+
+    public static void method1(){
+        System.out.println("c1");
+    }
+
 
 }

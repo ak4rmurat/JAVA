@@ -17,6 +17,7 @@ public class C05_ChildOfAbstractClass extends C04_KuralciAbstractParent{
      */
 
     public static void main(String[] args) {
+
         // C04_KuralciAbstractParent obj = new C04_KuralciAbstractParent();
 
         // C04_KuralciAbstractParent' is abstract; cannot be instantiated
@@ -33,8 +34,6 @@ public class C05_ChildOfAbstractClass extends C04_KuralciAbstractParent{
         C04_KuralciAbstractParent obj = new C05_ChildOfAbstractClass();
 
         List<String> isimler = new ArrayList<>();
-
-
 
     }
 }
