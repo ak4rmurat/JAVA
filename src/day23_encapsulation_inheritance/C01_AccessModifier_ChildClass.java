@@ -7,6 +7,8 @@ import day22_stringBuilder_accessModifier_encapsulation.C05_RaporClass;
 
 public class C01_AccessModifier_ChildClass extends C03_AccessModifier {
 
+    private String isim = "murat";
+    String isim1 = "damra";
     // farkli package'daki child class'dan
     // private ==> ulasamayiz
     // default ==> ulasamayiz
@@ -14,6 +16,8 @@ public class C01_AccessModifier_ChildClass extends C03_AccessModifier {
     // public ==> ulasabilir
 
     public static void main(String[] args) {
+
+
 
       C01_AccessModifier_ChildClass obj = new C01_AccessModifier_ChildClass();
       //// System.out.println(obj.sayiPri);

@@ -6,7 +6,7 @@ public class C04_GP {
         System.out.println("GP parametresiz constructor çalıştı");
     }
     C04_GP(String s){
-        this();
+       this();
         System.out.println("GP String parametreli Constructor çalıştı");
     }
 

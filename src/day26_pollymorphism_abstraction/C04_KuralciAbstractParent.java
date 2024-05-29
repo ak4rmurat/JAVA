@@ -46,10 +46,8 @@ public abstract class C04_KuralciAbstractParent {
     protected abstract void method1();
     // 35. satır diyor ki : Bu class'ı (C04_KuralciAbstractParent)
     // child edinenler bu method'u override etmek zorunda
-    protected void method2(){
+    protected abstract void method2();
 
-        System.out.println("Parent method2");
-    }
     protected void method3(){
 
         System.out.println("Parent method3");

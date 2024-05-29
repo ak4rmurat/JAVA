@@ -2,10 +2,11 @@ package day23_encapsulation_inheritance;
 
 public class C06_Child extends C05_Parent{
 
-    String isim  = "Child isim";
+    public String isim  = "Child isim";
     String adres = "Child adres";
     int yas ;
     String tel;
+    protected String soyIsim = "akar";
 
     public static void main(String[] args) {
 

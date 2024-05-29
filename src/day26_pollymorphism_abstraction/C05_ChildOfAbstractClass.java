@@ -10,6 +10,10 @@ public class C05_ChildOfAbstractClass extends C04_KuralciAbstractParent{
 
     }
 
+    @Override
+    protected void method2() {
+
+    }
 
     /*
     Class 'C05_ChildOfAbstractClass' must either be declared abstract

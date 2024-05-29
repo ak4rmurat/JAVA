@@ -6,6 +6,11 @@ public class C08_Child extends C07_Parent{
     String adres = "Child adres";
     int yas = 20;
     int boy = 180;
+    int kilo = 50;
+
+    public void method3(){
+        System.out.println("child method3");
+    }
 
     public void method1(){
         System.out.println("Child method1");
@@ -16,8 +21,8 @@ public class C08_Child extends C07_Parent{
         int yas = 40;
 
         method1();
-        this.method1(); // Bu class'taki method1 üstteki ile aynı => Child method1
-        super.method1(); // Parent'ta method1'i arar => Parent method1
+        this.method1();
+        super.method1();
         method2(); // Bu class'ta method2 var mı bakar yoksa Parent'a bakar
                     // ve varsa yazdırır => Parent method2 yazdırır.
         System.out.println("==========");
@@ -66,8 +71,8 @@ public class C08_Child extends C07_Parent{
     }
 
     public static void main(String[] args) {
-        C07_Parent child1 = new C08_Child();
-        child1.method1();
+        C07_Parent obj = new C08_Child();
+        System.out.println(obj.kilo);
 
 
     }

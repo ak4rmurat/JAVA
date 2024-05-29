@@ -1,6 +1,8 @@
 package day25_inheritanceDataTypeKullanimi_overriding;
 
-public class C09_Ozet {
+import day23_encapsulation_inheritance.C06_Child;
+
+public class C09_Ozet extends C06_Child {
      /*
         java'da data type kullanimini su sekilde de siniflandirabiliriz
 
@@ -30,4 +32,12 @@ public class C09_Ozet {
              daha guncel hali (Overriding Method) var mi diye bakilir
              EN GUNCEL deger kullanilir
      */
+
+    public static void main(String[] args) {
+
+        C09_Ozet obj = new C09_Ozet();
+        System.out.println(obj.soyIsim);
+
+    }
+
 }

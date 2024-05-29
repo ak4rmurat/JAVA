@@ -6,8 +6,12 @@ import java.util.Objects;
 
 public class C03_Corsa extends C02_Opel{
     C03_Corsa(){
-        super();
+        this(5);
         System.out.println("Corsa constructor çalıştı.");
+    }
+    C03_Corsa(int a){
+        super();
+        System.out.println("Corsa parametreli constructor calisti");
     }
 
     String model = "Corsa";
@@ -33,14 +37,16 @@ public class C03_Corsa extends C02_Opel{
             satırına'da parametresiz super() [constructor call] koyar.
          */
 
-        C03_Corsa corsa1 = new C03_Corsa(); // sistem Constructor'un içine girmeden objeyi oluşturur sonra girer.
+        C03_Corsa corsa1 = new C03_Corsa();
+
+        // sistem Constructor'un içine girmeden objeyi oluşturur sonra girer.
 
         System.out.println(corsa1.model); // Corsa
-        System.out.println(corsa1.motor); // vvt
-        System.out.println(corsa1.renk); // belirtilmedi
+       // System.out.println(corsa1.motor); // vvt
+       // System.out.println(corsa1.renk); // belirtilmedi
 
-        System.out.println(corsa1.marka); // Opel
-        System.out.println(corsa1.kasa); // Belirtilmedi
+       // System.out.println(corsa1.marka); // Opel
+       // System.out.println(corsa1.kasa); // Belirtilmedi
 
 
 

@@ -11,13 +11,13 @@ public class C06_C extends C05_P {
   }
 
     C06_C(int a){
-        super();
+
         System.out.println("C İnt parametreli Constructor çalıştı");
     }
 
     public static void main(String[] args) {
 
-         C06_C child2 = new C06_C(1);
+         C06_C obj = new C06_C(5);
         /*
         Ekrana
             C int parametreli
@@ -27,7 +27,9 @@ public class C06_C extends C05_P {
 
          */
 
-        System.out.println("-----------");
+        System.out.println(obj);
+
+
 
         // C06_C child3 = new C06_C("Ali");
         /*

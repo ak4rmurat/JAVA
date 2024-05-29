@@ -2,7 +2,7 @@ package day24_inheritance;
 
 public class C05_P extends C04_GP{
     C05_P(){
-        super("a");
+        super("ali");
         System.out.println("P parametresiz constructor çalıştı");
     }
     C05_P(String s){
