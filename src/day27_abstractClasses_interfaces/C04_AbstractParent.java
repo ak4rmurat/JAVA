@@ -9,27 +9,23 @@ public abstract class C04_AbstractParent extends C01_AbstractGP{
 
     // Concrete bir class'ın concrete bir child'ı gibi davranır.
 
-    public abstract void method1();
 
-    public void method2(){
 
-        System.out.println("Abstract parent method2");
-    }
 
-    public abstract void method3();
 
-    public abstract void method6();
 
     public void method7(){
         System.out.println("Abstract parent method7");
     }
 
 
-    C04_AbstractParent araba = new C04_AbstractParent() {
+    C05_ChildOfAbstractParent araba = new C05_ChildOfAbstractParent() {
+
         @Override
         public void method1() {
-
+            System.out.println("method1");
         }
+
 
         @Override
         public void method3() {
@@ -41,4 +37,10 @@ public abstract class C04_AbstractParent extends C01_AbstractGP{
 
         }
     };
+
+    public abstract void method6();
+
+
+
+
 }

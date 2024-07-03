@@ -11,7 +11,22 @@ public class C03_ChildOfKuralciOlmayanParent extends C02_KuralciOlmayanParent{
 
      */
 
+    @Override
+    protected void method1() {
+        System.out.println("method1");
+    }
+    protected void method2(){
+        method1();
+    }
+
     public static void main(String[] args) {
+
+
+
+
+    }
+
+    public static void method4(){
 
     }
 

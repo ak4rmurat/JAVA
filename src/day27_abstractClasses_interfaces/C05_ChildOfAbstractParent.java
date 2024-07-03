@@ -21,6 +21,11 @@ public class C05_ChildOfAbstractParent extends C04_AbstractParent{
         System.out.println("Concrete child class method6");
     }
 
+    @Override
+    public void method2() {
+        System.out.println("Concrete child method2");
+    }
+
     public static void main(String[] args) {
 
 
