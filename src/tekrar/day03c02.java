@@ -16,5 +16,6 @@ public class day03c02 {
 
 
         System.out.println("Girilen sayıların toplamı : " + (sayi1+sayi2+sayi3));
+
     }
 }
