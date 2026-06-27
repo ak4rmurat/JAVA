@@ -43,7 +43,7 @@ public class C03_PrimitiveDataTurleri {
 
         // ondalikli sayilar icin float veya double
 
-        float sayi10 = 234.9f ;
+        float sayi10 = 234.9f ; // float için sayı sonuna f veya F koymak zorunlu
         float sayi11 = 3.5F;
 
         double sayi12 = 2.3;
